@@ -9,10 +9,10 @@
     <artifactId>bungeeban</artifactId>
     <version>3.0.0</version>
 
-    <!-- Use java version 8 for this plugin -->
+    <!-- Use java version 7 for this plugin to ensure great backwards compatibility -->
     <properties>
-        <maven.compiler.source>8</maven.compiler.source>
-        <maven.compiler.target>8</maven.compiler.target>
+        <maven.compiler.source>7</maven.compiler.source>
+        <maven.compiler.target>7</maven.compiler.target>
     </properties>
 
     <!-- Custom maven repository for BungeeCord -->
@@ -47,6 +47,12 @@
             <artifactId>lombok</artifactId>
             <version>1.18.16</version>
             <scope>compile</scope>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>8.0.23</version>
         </dependency>
     </dependencies>
 
